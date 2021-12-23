@@ -13,7 +13,7 @@ function App() {
     e.preventDefault();
     axios
       .get(
-        `https://api.unsplash.com/search/photos?page=1&per_page=20&query=${query}&client_id=${accessKey}`
+        `https://api.unsplash.com/search/photos?page=1&per_page=50&query=${query}&client_id=${accessKey}`
       )
       .then((resp) => {
         setData(resp.data.results);
